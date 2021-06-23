@@ -218,7 +218,6 @@ const animalsList = [
     "wolf",
     "wolverine",
     "wombat",
-    "woodcock",
     "woodpecker",
     "worm",
     "wren",
