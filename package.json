@@ -1,6 +1,6 @@
 {
   "name": "friendly-username-generator",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A non-explicit random username generator",
   "main": "index.js",
   "repository": {
@@ -8,8 +8,14 @@
     "url": "https://github.com/EvanPeterson1324/friendly-username-generator"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "Evan Peterson",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.0.5"
+  },
+  "jest": {
+    "verbose": true
+  }
 }

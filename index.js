@@ -1,3 +1,3 @@
-const { generateRandomUsername } = require('./generateRandomUserNames');
+const { generateRandomUsername } = require('./src/generateRandomUserNames');
 
 module.exports = generateRandomUsername;

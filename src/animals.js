@@ -38,6 +38,7 @@ const animalsList = [
     "cobra",
     "cockroach",
     "cod",
+    "corgi",
     "cormorant",
     "coyote",
     "crab",
@@ -186,6 +187,7 @@ const animalsList = [
     "sheep",
     "shrew",
     "skunk",
+    "slug",
     "snail",
     "snake",
     "sparrow",
@@ -218,12 +220,11 @@ const animalsList = [
     "wolf",
     "wolverine",
     "wombat",
-    "woodcock",
     "woodpecker",
     "worm",
     "wren",
     "yak",
-    "zebra"
+    "zebra",
 ]
 
 module.exports = animalsList;
