@@ -38,6 +38,7 @@ const animalsList = [
     "cobra",
     "cockroach",
     "cod",
+    "corgi",
     "cormorant",
     "coyote",
     "crab",
