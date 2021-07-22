@@ -1,6 +1,6 @@
 {
   "name": "friendly-username-generator",
-  "version": "1.0.5",
+  "version": "1.0.4",
   "description": "A non-explicit random username generator",
   "main": "index.js",
   "repository": {
