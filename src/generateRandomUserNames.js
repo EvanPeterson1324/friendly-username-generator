@@ -10,7 +10,7 @@ const defaultOptions = {
   useRandomNumber: true
 }
 
-const checkOptions = (options) => {
+const checkOptions = (options = {}) => {
   if (typeof options !== 'object') {
     throw new Error('options must be an object')
   }

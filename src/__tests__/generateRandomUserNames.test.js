@@ -34,4 +34,8 @@ describe(('username generation tests'), () => {
   it('should throw error if useHyphen option is not a boolean', () => {
     expect(() => generateRandomUsername({ useHyphen: 'huehuehue' })).toThrowError(`options.useHyphen must be a boolean, got string instead.`)
   })
+
+  it('should throw error if useRandomNumber is false', () => {
+    expect(() => generateRandomUsername({ useRandomNumber: 1 })).toThrowError(`options.useRandomNumber must be a boolean, got number instead.`)
+  })
 });
