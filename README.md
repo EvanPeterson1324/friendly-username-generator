@@ -21,3 +21,6 @@ const options = {
 ### Other Perks
 - Zero dependancies! This module will use only native code. (Except for jest so I can write tests)
 - Frequent updates to word lists.
+
+### Enjoy the package?
+If you'd like to support me, [buy me a coffee!](https://www.buymeacoffee.com/ezmacnsteeze)
