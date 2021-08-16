@@ -4,8 +4,18 @@ Tired of accidentally generating explicit usernames? Well fear no longer. This m
 ```js
 const generateUsername = require('friendly-username-generator');
 
-// Structure: adjective + a dash + animal + number from 0 to 999
-generateUsername(); // --> "yellow-zebra596"
+// Structure: (adjective-animal<random 3-digit number>)
+generateUsername(); // --> "yellow-zebra596" 
+```
+
+### Options
+You may pass options to `generateUsername`
+
+```js
+const options = {
+    useHyphen: Boolean,         // if false, a hyphen will NOT be used. (True by default)
+    useRandomNumber: Boolean    // if false, a random number will NOT be appended to the end of the random username. (True by default)
+}
 ```
 
 ### Other Perks
