@@ -26,9 +26,13 @@ const checkOptions = (options = {}) => {
   }
 }
 
-const generateRandomUsername = (options = defaultOptions) => {
-
-  checkOptions(options) // Input Validation
+const generateRandomUsername = (options = {}) => {
+  if (typeof options !== 'object') {
+    throw new Error('options must be an object')
+  }
+  
+  const newOptions = { ...defaultOptions, ...options } // Make sure default options are always set
+  checkOptions(newOptions) // Input Validation
   
   // Construct username
   const randomAdjective = adjectives[getRandomItemFromArray(adjectives)]
@@ -36,11 +40,11 @@ const generateRandomUsername = (options = defaultOptions) => {
   const randomNumber = getRandomNumber(0, 999)
   let username = `${randomAdjective}-${randomAnimal}${randomNumber}` 
 
-  if (!options.useHyphen){
+  if (!newOptions.useHyphen){
     username = username.replace('-', '')
   }
 
-  if (!options.useRandomNumber) {
+  if (!newOptions.useRandomNumber) {
     const matchNumbersRegex = /[0-9]/g
     username = username.replace(matchNumbersRegex, '')
   }
