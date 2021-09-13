@@ -38,4 +38,13 @@ describe(('username generation tests'), () => {
   it('should throw error if useRandomNumber is false', () => {
     expect(() => generateRandomUsername({ useRandomNumber: 1 })).toThrowError(`options.useRandomNumber must be a boolean, got number instead.`)
   })
+
+  it('should set defaults when options are explicitly passed', () => {
+    const usernameWithDefaultOptions = generateRandomUsername({})
+    const matchNumbersRegex = /[0-9]/g
+
+    expect(usernameWithDefaultOptions).toEqual(expect.any(String))
+    expect(usernameWithDefaultOptions.match(matchNumbersRegex)).not.toBe(null)
+    expect(usernameWithDefaultOptions.includes('-')).toBe(true)
+  })
 });
