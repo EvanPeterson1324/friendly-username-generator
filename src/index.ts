@@ -1,0 +1,1 @@
+export { generateUsername } from './generateUsername';
