@@ -25,6 +25,7 @@
     "deploy.sh",
     "Dockerfile",
     "README.md",
-    "package.lock"
+    "package.lock",
+    "__tests__"
   ]
 }
