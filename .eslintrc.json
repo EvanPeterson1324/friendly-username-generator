@@ -1,0 +1,47 @@
+{
+  "env": {
+    "node": true,
+    "es2021": true,
+    "jest": true
+  },
+  "ignorePatterns": ["build/**", "tsconfig.json"],
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaVersion": 12
+  },
+  "plugins": ["jest"],
+  "rules": {
+    "indent": [
+      "error",
+      2,
+      { "SwitchCase": 1 } // forces switch statements to be properly indented
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "never"
+    ],
+    "switch-colon-spacing": [
+      "error", {
+          "after": true, 
+          "before": false
+      }
+    ],
+    "brace-style": [
+      "error",
+      "1tbs",
+      { "allowSingleLine": false }
+    ],
+    "curly": [
+      "error",
+      "all"
+    ],
+    "no-console": [
+      1,
+      { "allow": ["warn", "error"] }
+    ]
+  }
+}
