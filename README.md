@@ -1,3 +1,5 @@
+![ts](https://badgen.net/badge/-/TypeScript/blue?icon=typescript&label)
+
 # Friendly Username Generator
 Tired of accidentally generating explicit usernames? Well fear no longer. This module will put your boss at ease by generating friendly usernames.
 
