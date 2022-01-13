@@ -1,0 +1,31 @@
+{
+  "extends": "@tsconfig/node14/tsconfig.json",
+  "compilerOptions": {
+    "module": "CommonJS",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "outDir": "build",
+    "allowJs": true,
+    "downlevelIteration": true,
+    "resolveJsonModule": true
+  },
+  "include": [
+    "src/**/*",
+    "src/bin"
+  ],
+  "exclude": [
+    "node_modules",
+    "src/**/__tests__",
+    "./build/**",
+    "__mocks__/**",
+    ".eslintrc.json",
+    ".gitignore",
+    "deploy.sh",
+    "Dockerfile",
+    "README.md",
+    "package.lock",
+    "__tests__"
+  ]
+}
