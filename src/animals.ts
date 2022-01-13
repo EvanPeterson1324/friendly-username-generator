@@ -1,5 +1,5 @@
 // TODO: move onto one line.
-export const animalsList = [
+export const animals = [
   "aardvark",
   "albatross",
   "alligator",
