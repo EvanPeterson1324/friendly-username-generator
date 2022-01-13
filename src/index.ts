@@ -1,4 +1,1 @@
-export { 
-  generateUsername,
-  Options
-} from './generateUsername';
+export { generateUsername } from './generateUsername';
