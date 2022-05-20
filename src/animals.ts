@@ -177,7 +177,6 @@ export const animals = [
   "rook",
   "salamander",
   "salmon",
-  "sand dollar",
   "sandpiper",
   "sardine",
   "scorpion",
