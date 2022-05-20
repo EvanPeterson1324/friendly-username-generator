@@ -8,7 +8,6 @@ describe(('username generation tests'), () => {
 
   it('should generate username if options object has no keys', () => {
     const username = generateUsername({});
-    console.log('no keys', username)
     expect(username).toEqual(expect.any(String))
   })
 
